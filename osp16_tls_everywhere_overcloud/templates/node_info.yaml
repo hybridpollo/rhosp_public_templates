@@ -1,0 +1,17 @@
+# Environment file containing the node counts
+# Flavors and general customizations
+parameter_defaults:
+  OvercloudControllerFlavor: baremetal
+  OvercloudComputeFlavor: baremetal
+  ControllerCount: 1
+  ComputeCount: 2
+
+  # Miscellaneous overcloud level parameters
+  TimeZone: 'America/Chicago'
+  NodeRootPassword: 'redhat'
+
+  # The DNS domain used for the hosts. This must match the overcloud_domain_name configured on the undercloud.
+  CloudDomain: voltron.xyz
+
+  # The DNS name of this cloud. E.g. ci-overcloud.tripleo.org
+  CloudName: osp-console.voltron.xyz
