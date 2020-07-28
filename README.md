@@ -10,7 +10,8 @@ OpenStack Platform 13.
 
 These are some of the interesting deployment scenarios covered by these templates:
 - Deploying Multiple Overclouds from a Single Overcloud
-- Splitting the Overcloud deployment by using Multiple Stacks
+- Deploying the Overcloud using independent heat stacks for controllers, and compute nodes.
+- Deploying the Overcloud using TLS encryption everywhere.
 
 Additional information for each deployment template set can be found in the
 README.md for each deployment scenario.
