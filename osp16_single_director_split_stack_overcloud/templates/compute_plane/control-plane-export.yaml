@@ -1,0 +1,1495 @@
+parameter_defaults:
+  AdminPassword: mwVsmgFCDS2ly30fniSxwzRQc
+  AdminToken: bjyoTNqZdtsQ7AyhLpewKr1Ei
+  AllNodesExtraMapData:
+    aodh_api_network: internal_api
+    apache_network: internal_api
+    barbican_api_network: internal_api
+    bindnetwork: external
+    boot_params_service_bootstrap_node_ip: 172.16.24.11
+    boot_params_service_enabled: true
+    boot_params_service_node_ips:
+    - 172.16.24.11
+    boot_params_service_node_names:
+    - osp16-ctrl01.ctlplane.voltron.xyz
+    boot_params_service_short_bootstrap_node_name: osp16-ctrl01
+    boot_params_service_short_node_names:
+    - osp16-ctrl01
+    ca_certs_bootstrap_node_ip: 172.16.24.11
+    ca_certs_enabled: true
+    ca_certs_node_ips:
+    - 172.16.24.11
+    ca_certs_node_names:
+    - osp16-ctrl01.ctlplane.voltron.xyz
+    ca_certs_short_bootstrap_node_name: osp16-ctrl01
+    ca_certs_short_node_names:
+    - osp16-ctrl01
+    ceph_cluster_network: storage_mgmt
+    ceph_dashboard_network: ctlplane
+    ceph_grafana_network: storage
+    ceph_mon_network: storage
+    ceph_rgw_network: storage
+    certmonger_user_bootstrap_node_ip: 172.16.24.11
+    certmonger_user_enabled: true
+    certmonger_user_node_ips:
+    - 172.16.24.11
+    certmonger_user_node_names:
+    - osp16-ctrl01.ctlplane.voltron.xyz
+    certmonger_user_short_bootstrap_node_name: osp16-ctrl01
+    certmonger_user_short_node_names:
+    - osp16-ctrl01
+    chrony_bootstrap_node_ip: 172.16.24.11
+    chrony_enabled: true
+    chrony_node_ips:
+    - 172.16.24.11
+    chrony_node_names:
+    - osp16-ctrl01.ctlplane.voltron.xyz
+    chrony_short_bootstrap_node_name: osp16-ctrl01
+    chrony_short_node_names:
+    - osp16-ctrl01
+    cinder_api_bootstrap_node_ip: 172.25.51.11
+    cinder_api_enabled: true
+    cinder_api_network: internal_api
+    cinder_api_node_ips:
+    - 172.25.51.11
+    cinder_api_node_names:
+    - osp16-ctrl01.internalapi.voltron.xyz
+    cinder_api_short_bootstrap_node_name: osp16-ctrl01
+    cinder_api_short_node_names:
+    - osp16-ctrl01
+    cinder_iscsi_network: storage
+    cinder_scheduler_bootstrap_node_ip: 172.16.24.11
+    cinder_scheduler_enabled: true
+    cinder_scheduler_node_ips:
+    - 172.16.24.11
+    cinder_scheduler_node_names:
+    - osp16-ctrl01.ctlplane.voltron.xyz
+    cinder_scheduler_short_bootstrap_node_name: osp16-ctrl01
+    cinder_scheduler_short_node_names:
+    - osp16-ctrl01
+    cinder_volume_bootstrap_node_ip: 172.16.24.11
+    cinder_volume_enabled: true
+    cinder_volume_node_ips:
+    - 172.16.24.11
+    cinder_volume_node_names:
+    - osp16-ctrl01.ctlplane.voltron.xyz
+    cinder_volume_short_bootstrap_node_name: osp16-ctrl01
+    cinder_volume_short_node_names:
+    - osp16-ctrl01
+    clustercheck_bootstrap_node_ip: 172.16.24.11
+    clustercheck_enabled: true
+    clustercheck_node_ips:
+    - 172.16.24.11
+    clustercheck_node_names:
+    - osp16-ctrl01.ctlplane.voltron.xyz
+    clustercheck_short_bootstrap_node_name: osp16-ctrl01
+    clustercheck_short_node_names:
+    - osp16-ctrl01
+    compute_hostname_resolve_network: internal_api
+    compute_metrics_qdr_network: internal_api
+    container_cli: podman
+    container_image_prepare_bootstrap_node_ip: 172.16.24.11
+    container_image_prepare_enabled: true
+    container_image_prepare_node_ips:
+    - 172.16.24.11
+    container_image_prepare_node_names:
+    - osp16-ctrl01.ctlplane.voltron.xyz
+    container_image_prepare_short_bootstrap_node_name: osp16-ctrl01
+    container_image_prepare_short_node_names:
+    - osp16-ctrl01
+    controller_hostname_resolve_network: internal_api
+    controller_metrics_qdr_network: internal_api
+    controller_node_ips: 172.16.24.11
+    controller_node_names: osp16-ctrl01
+    deploy_identifier: '1595862786'
+    designate_api_network: internal_api
+    docker_registry_network: ctlplane
+    ec2_api_metadata_network: internal_api
+    ec2_api_network: internal_api
+    enabled_services:
+    - nova_compute
+    - horizon
+    - heat_api
+    - nova_conductor
+    - ovn_controller
+    - pacemaker
+    - boot_params_service
+    - keystone_admin_api
+    - memcached
+    - nova_api
+    - placement
+    - glance_api
+    - oslo_messaging_notify
+    - certmonger_user
+    - container_image_prepare
+    - mysql
+    - ipaclient
+    - keystone_public_api
+    - podman
+    - iscsid
+    - logrotate_crond
+    - ca_certs
+    - tuned
+    - rhsm
+    - heat_engine
+    - tripleo_packages
+    - nova_vnc_proxy
+    - timezone
+    - sshd
+    - nova_libvirt_guests
+    - clustercheck
+    - oslo_messaging_rpc
+    - haproxy
+    - heat_api_cloudwatch_disabled
+    - ovn_metadata
+    - tripleo_firewall
+    - nova_migration_target
+    - cinder_volume
+    - heat_api_cfn
+    - kernel
+    - neutron_api
+    - ovn_dbs
+    - mysql_client
+    - nova_libvirt
+    - cinder_api
+    - nova_metadata
+    - neutron_plugin_ml2_ovn
+    - cinder_scheduler
+    - snmp
+    - chrony
+    - nova_scheduler
+    - keystone
+    etcd_network: internal_api
+    ganesha_network: ctlplane
+    glance_api_bootstrap_node_ip: 172.25.51.11
+    glance_api_edge_network: internal_api
+    glance_api_enabled: true
+    glance_api_network: internal_api
+    glance_api_node_ips:
+    - 172.25.51.11
+    glance_api_node_names:
+    - osp16-ctrl01.internalapi.voltron.xyz
+    glance_api_short_bootstrap_node_name: osp16-ctrl01
+    glance_api_short_node_names:
+    - osp16-ctrl01
+    gnocchi_api_network: internal_api
+    haproxy_bootstrap_node_ip: 172.16.24.11
+    haproxy_enabled: true
+    haproxy_network: ctlplane
+    haproxy_node_ips:
+    - 172.16.24.11
+    haproxy_node_names:
+    - osp16-ctrl01.ctlplane.voltron.xyz
+    haproxy_short_bootstrap_node_name: osp16-ctrl01
+    haproxy_short_node_names:
+    - osp16-ctrl01
+    heat_api_bootstrap_node_ip: 172.25.51.11
+    heat_api_cfn_bootstrap_node_ip: 172.25.51.11
+    heat_api_cfn_enabled: true
+    heat_api_cfn_network: internal_api
+    heat_api_cfn_node_ips:
+    - 172.25.51.11
+    heat_api_cfn_node_names:
+    - osp16-ctrl01.internalapi.voltron.xyz
+    heat_api_cfn_short_bootstrap_node_name: osp16-ctrl01
+    heat_api_cfn_short_node_names:
+    - osp16-ctrl01
+    heat_api_cloudwatch_disabled_bootstrap_node_ip: 172.16.24.11
+    heat_api_cloudwatch_disabled_enabled: true
+    heat_api_cloudwatch_disabled_node_ips:
+    - 172.16.24.11
+    heat_api_cloudwatch_disabled_node_names:
+    - osp16-ctrl01.ctlplane.voltron.xyz
+    heat_api_cloudwatch_disabled_short_bootstrap_node_name: osp16-ctrl01
+    heat_api_cloudwatch_disabled_short_node_names:
+    - osp16-ctrl01
+    heat_api_cloudwatch_network: internal_api
+    heat_api_enabled: true
+    heat_api_network: internal_api
+    heat_api_node_ips:
+    - 172.25.51.11
+    heat_api_node_names:
+    - osp16-ctrl01.internalapi.voltron.xyz
+    heat_api_short_bootstrap_node_name: osp16-ctrl01
+    heat_api_short_node_names:
+    - osp16-ctrl01
+    heat_engine_bootstrap_node_ip: 172.16.24.11
+    heat_engine_enabled: true
+    heat_engine_node_ips:
+    - 172.16.24.11
+    heat_engine_node_names:
+    - osp16-ctrl01.ctlplane.voltron.xyz
+    heat_engine_short_bootstrap_node_name: osp16-ctrl01
+    heat_engine_short_node_names:
+    - osp16-ctrl01
+    horizon_bootstrap_node_ip: 172.25.51.11
+    horizon_enabled: true
+    horizon_network: internal_api
+    horizon_node_ips:
+    - 172.25.51.11
+    horizon_node_names:
+    - osp16-ctrl01.internalapi.voltron.xyz
+    horizon_short_bootstrap_node_name: osp16-ctrl01
+    horizon_short_node_names:
+    - osp16-ctrl01
+    ipaclient_bootstrap_node_ip: 172.16.24.11
+    ipaclient_enabled: true
+    ipaclient_node_ips:
+    - 172.16.24.11
+    ipaclient_node_names:
+    - osp16-ctrl01.ctlplane.voltron.xyz
+    ipaclient_short_bootstrap_node_name: osp16-ctrl01
+    ipaclient_short_node_names:
+    - osp16-ctrl01
+    ironic_api_network: ctlplane
+    ironic_inspector_network: ctlplane
+    ironic_network: ctlplane
+    iscsid_bootstrap_node_ip: 172.16.24.11
+    iscsid_enabled: true
+    iscsid_node_ips:
+    - 172.16.24.11
+    iscsid_node_names:
+    - osp16-ctrl01.ctlplane.voltron.xyz
+    iscsid_short_bootstrap_node_name: osp16-ctrl01
+    iscsid_short_node_names:
+    - osp16-ctrl01
+    kernel_bootstrap_node_ip: 172.16.24.11
+    kernel_enabled: true
+    kernel_node_ips:
+    - 172.16.24.11
+    kernel_node_names:
+    - osp16-ctrl01.ctlplane.voltron.xyz
+    kernel_short_bootstrap_node_name: osp16-ctrl01
+    kernel_short_node_names:
+    - osp16-ctrl01
+    keystone_admin_api_bootstrap_node_ip: 172.16.24.11
+    keystone_admin_api_enabled: true
+    keystone_admin_api_network: ctlplane
+    keystone_admin_api_node_ips:
+    - 172.16.24.11
+    keystone_admin_api_node_names:
+    - osp16-ctrl01.ctlplane.voltron.xyz
+    keystone_admin_api_short_bootstrap_node_name: osp16-ctrl01
+    keystone_admin_api_short_node_names:
+    - osp16-ctrl01
+    keystone_bootstrap_node_ip: 172.16.24.11
+    keystone_enabled: true
+    keystone_node_ips:
+    - 172.16.24.11
+    keystone_node_names:
+    - osp16-ctrl01.ctlplane.voltron.xyz
+    keystone_public_api_bootstrap_node_ip: 172.25.51.11
+    keystone_public_api_enabled: true
+    keystone_public_api_network: internal_api
+    keystone_public_api_node_ips:
+    - 172.25.51.11
+    keystone_public_api_node_names:
+    - osp16-ctrl01.internalapi.voltron.xyz
+    keystone_public_api_short_bootstrap_node_name: osp16-ctrl01
+    keystone_public_api_short_node_names:
+    - osp16-ctrl01
+    keystone_short_bootstrap_node_name: osp16-ctrl01
+    keystone_short_node_names:
+    - osp16-ctrl01
+    logrotate_crond_bootstrap_node_ip: 172.16.24.11
+    logrotate_crond_enabled: true
+    logrotate_crond_node_ips:
+    - 172.16.24.11
+    logrotate_crond_node_names:
+    - osp16-ctrl01.ctlplane.voltron.xyz
+    logrotate_crond_short_bootstrap_node_name: osp16-ctrl01
+    logrotate_crond_short_node_names:
+    - osp16-ctrl01
+    manila_api_network: internal_api
+    memcached_bootstrap_node_ip: 172.25.51.11
+    memcached_enabled: true
+    memcached_network: internal_api
+    memcached_node_ips:
+    - 172.25.51.11
+    memcached_node_names:
+    - osp16-ctrl01.internalapi.voltron.xyz
+    memcached_short_bootstrap_node_name: osp16-ctrl01
+    memcached_short_node_names:
+    - osp16-ctrl01
+    mistral_api_network: internal_api
+    mongodb_network: internal_api
+    mysql_bootstrap_node_ip: 172.25.51.11
+    mysql_client_bootstrap_node_ip: 172.16.24.11
+    mysql_client_enabled: true
+    mysql_client_node_ips:
+    - 172.16.24.11
+    mysql_client_node_names:
+    - osp16-ctrl01.ctlplane.voltron.xyz
+    mysql_client_short_bootstrap_node_name: osp16-ctrl01
+    mysql_client_short_node_names:
+    - osp16-ctrl01
+    mysql_enabled: true
+    mysql_network: internal_api
+    mysql_node_ips:
+    - 172.25.51.11
+    mysql_node_names:
+    - osp16-ctrl01.internalapi.voltron.xyz
+    mysql_short_bootstrap_node_name: osp16-ctrl01
+    mysql_short_node_names:
+    - osp16-ctrl01
+    neutron_api_bootstrap_node_ip: 172.25.51.11
+    neutron_api_enabled: true
+    neutron_api_network: internal_api
+    neutron_api_node_ips:
+    - 172.25.51.11
+    neutron_api_node_names:
+    - osp16-ctrl01.internalapi.voltron.xyz
+    neutron_api_short_bootstrap_node_name: osp16-ctrl01
+    neutron_api_short_node_names:
+    - osp16-ctrl01
+    neutron_plugin_ml2_ovn_bootstrap_node_ip: 172.16.24.11
+    neutron_plugin_ml2_ovn_enabled: true
+    neutron_plugin_ml2_ovn_node_ips:
+    - 172.16.24.11
+    neutron_plugin_ml2_ovn_node_names:
+    - osp16-ctrl01.ctlplane.voltron.xyz
+    neutron_plugin_ml2_ovn_short_bootstrap_node_name: osp16-ctrl01
+    neutron_plugin_ml2_ovn_short_node_names:
+    - osp16-ctrl01
+    neutron_tenant_network: tenant
+    nova_api_bootstrap_node_ip: 172.25.51.11
+    nova_api_enabled: true
+    nova_api_network: internal_api
+    nova_api_node_ips:
+    - 172.25.51.11
+    nova_api_node_names:
+    - osp16-ctrl01.internalapi.voltron.xyz
+    nova_api_short_bootstrap_node_name: osp16-ctrl01
+    nova_api_short_node_names:
+    - osp16-ctrl01
+    nova_compute_enabled: true
+    nova_compute_node_ips: []
+    nova_compute_node_names: []
+    nova_compute_short_node_names: []
+    nova_conductor_bootstrap_node_ip: 172.16.24.11
+    nova_conductor_enabled: true
+    nova_conductor_node_ips:
+    - 172.16.24.11
+    nova_conductor_node_names:
+    - osp16-ctrl01.ctlplane.voltron.xyz
+    nova_conductor_short_bootstrap_node_name: osp16-ctrl01
+    nova_conductor_short_node_names:
+    - osp16-ctrl01
+    nova_libvirt_enabled: true
+    nova_libvirt_guests_enabled: true
+    nova_libvirt_guests_node_ips: []
+    nova_libvirt_guests_node_names: []
+    nova_libvirt_guests_short_node_names: []
+    nova_libvirt_network: internal_api
+    nova_libvirt_node_ips: []
+    nova_libvirt_node_names: []
+    nova_libvirt_short_node_names: []
+    nova_metadata_bootstrap_node_ip: 172.25.51.11
+    nova_metadata_enabled: true
+    nova_metadata_network: internal_api
+    nova_metadata_node_ips:
+    - 172.25.51.11
+    nova_metadata_node_names:
+    - osp16-ctrl01.internalapi.voltron.xyz
+    nova_metadata_short_bootstrap_node_name: osp16-ctrl01
+    nova_metadata_short_node_names:
+    - osp16-ctrl01
+    nova_migration_target_enabled: true
+    nova_migration_target_node_ips: []
+    nova_migration_target_node_names: []
+    nova_migration_target_short_node_names: []
+    nova_scheduler_bootstrap_node_ip: 172.16.24.11
+    nova_scheduler_enabled: true
+    nova_scheduler_node_ips:
+    - 172.16.24.11
+    nova_scheduler_node_names:
+    - osp16-ctrl01.ctlplane.voltron.xyz
+    nova_scheduler_short_bootstrap_node_name: osp16-ctrl01
+    nova_scheduler_short_node_names:
+    - osp16-ctrl01
+    nova_vnc_proxy_bootstrap_node_ip: 172.25.51.11
+    nova_vnc_proxy_enabled: true
+    nova_vnc_proxy_network: internal_api
+    nova_vnc_proxy_node_ips:
+    - 172.25.51.11
+    nova_vnc_proxy_node_names:
+    - osp16-ctrl01.internalapi.voltron.xyz
+    nova_vnc_proxy_short_bootstrap_node_name: osp16-ctrl01
+    nova_vnc_proxy_short_node_names:
+    - osp16-ctrl01
+    novajoin_network: internal_api
+    octavia_api_network: internal_api
+    opendaylight_api_network: internal_api
+    oslo_messaging_notify_bootstrap_node_ip: 172.25.51.11
+    oslo_messaging_notify_enabled: true
+    oslo_messaging_notify_network: internal_api
+    oslo_messaging_notify_node_ips:
+    - 172.25.51.11
+    oslo_messaging_notify_node_names:
+    - osp16-ctrl01.internalapi.voltron.xyz
+    oslo_messaging_notify_short_bootstrap_node_name: osp16-ctrl01
+    oslo_messaging_notify_short_node_names:
+    - osp16-ctrl01
+    oslo_messaging_rpc_bootstrap_node_ip: 172.25.51.11
+    oslo_messaging_rpc_enabled: true
+    oslo_messaging_rpc_network: internal_api
+    oslo_messaging_rpc_node_ips:
+    - 172.25.51.11
+    oslo_messaging_rpc_node_names:
+    - osp16-ctrl01.internalapi.voltron.xyz
+    oslo_messaging_rpc_short_bootstrap_node_name: osp16-ctrl01
+    oslo_messaging_rpc_short_node_names:
+    - osp16-ctrl01
+    ovn_controller_bootstrap_node_ip: 172.16.24.11
+    ovn_controller_enabled: true
+    ovn_controller_node_ips:
+    - 172.16.24.11
+    ovn_controller_node_names:
+    - osp16-ctrl01.ctlplane.voltron.xyz
+    ovn_controller_short_bootstrap_node_name: osp16-ctrl01
+    ovn_controller_short_node_names:
+    - osp16-ctrl01
+    ovn_dbs_bootstrap_node_ip: 172.25.51.11
+    ovn_dbs_enabled: true
+    ovn_dbs_network: internal_api
+    ovn_dbs_node_ips:
+    - 172.25.51.11
+    ovn_dbs_node_names:
+    - osp16-ctrl01.internalapi.voltron.xyz
+    ovn_dbs_short_bootstrap_node_name: osp16-ctrl01
+    ovn_dbs_short_node_names:
+    - osp16-ctrl01
+    ovn_dbs_vip: 172.25.51.22
+    ovn_metadata_enabled: true
+    ovn_metadata_node_ips: []
+    ovn_metadata_node_names: []
+    ovn_metadata_short_node_names: []
+    pacemaker_bootstrap_node_ip: 172.25.51.11
+    pacemaker_enabled: true
+    pacemaker_network: internal_api
+    pacemaker_node_ips:
+    - 172.25.51.11
+    pacemaker_node_names:
+    - osp16-ctrl01.internalapi.voltron.xyz
+    pacemaker_remote_network: internal_api
+    pacemaker_short_bootstrap_node_name: osp16-ctrl01
+    pacemaker_short_node_names:
+    - osp16-ctrl01
+    panko_api_network: internal_api
+    placement_bootstrap_node_ip: 172.25.51.11
+    placement_enabled: true
+    placement_network: internal_api
+    placement_node_ips:
+    - 172.25.51.11
+    placement_node_names:
+    - osp16-ctrl01.internalapi.voltron.xyz
+    placement_short_bootstrap_node_name: osp16-ctrl01
+    placement_short_node_names:
+    - osp16-ctrl01
+    podman_bootstrap_node_ip: 172.16.24.11
+    podman_enabled: true
+    podman_node_ips:
+    - 172.16.24.11
+    podman_node_names:
+    - osp16-ctrl01.ctlplane.voltron.xyz
+    podman_short_bootstrap_node_name: osp16-ctrl01
+    podman_short_node_names:
+    - osp16-ctrl01
+    public_network: external
+    qdr_network: internal_api
+    rabbitmq_network: internal_api
+    redis_network: internal_api
+    rhsm_bootstrap_node_ip: 172.16.24.11
+    rhsm_enabled: true
+    rhsm_node_ips:
+    - 172.16.24.11
+    rhsm_node_names:
+    - osp16-ctrl01.ctlplane.voltron.xyz
+    rhsm_short_bootstrap_node_name: osp16-ctrl01
+    rhsm_short_node_names:
+    - osp16-ctrl01
+    sahara_api_network: internal_api
+    snmp_bootstrap_node_ip: 172.16.24.11
+    snmp_enabled: true
+    snmp_node_ips:
+    - 172.16.24.11
+    snmp_node_names:
+    - osp16-ctrl01.ctlplane.voltron.xyz
+    snmp_short_bootstrap_node_name: osp16-ctrl01
+    snmp_short_node_names:
+    - osp16-ctrl01
+    snmpd_network: ctlplane
+    sshd_bootstrap_node_ip: 172.16.24.11
+    sshd_enabled: true
+    sshd_node_ips:
+    - 172.16.24.11
+    sshd_node_names:
+    - osp16-ctrl01.ctlplane.voltron.xyz
+    sshd_short_bootstrap_node_name: osp16-ctrl01
+    sshd_short_node_names:
+    - osp16-ctrl01
+    stack_action: UPDATE
+    stack_update_type: ''
+    swift_proxy_network: storage
+    swift_storage_network: storage_mgmt
+    timezone_bootstrap_node_ip: 172.16.24.11
+    timezone_enabled: true
+    timezone_node_ips:
+    - 172.16.24.11
+    timezone_node_names:
+    - osp16-ctrl01.ctlplane.voltron.xyz
+    timezone_short_bootstrap_node_name: osp16-ctrl01
+    timezone_short_node_names:
+    - osp16-ctrl01
+    tripleo_firewall_bootstrap_node_ip: 172.16.24.11
+    tripleo_firewall_enabled: true
+    tripleo_firewall_node_ips:
+    - 172.16.24.11
+    tripleo_firewall_node_names:
+    - osp16-ctrl01.ctlplane.voltron.xyz
+    tripleo_firewall_short_bootstrap_node_name: osp16-ctrl01
+    tripleo_firewall_short_node_names:
+    - osp16-ctrl01
+    tripleo_packages_bootstrap_node_ip: 172.16.24.11
+    tripleo_packages_enabled: true
+    tripleo_packages_node_ips:
+    - 172.16.24.11
+    tripleo_packages_node_names:
+    - osp16-ctrl01.ctlplane.voltron.xyz
+    tripleo_packages_short_bootstrap_node_name: osp16-ctrl01
+    tripleo_packages_short_node_names:
+    - osp16-ctrl01
+    tuned_bootstrap_node_ip: 172.16.24.11
+    tuned_enabled: true
+    tuned_node_ips:
+    - 172.16.24.11
+    tuned_node_names:
+    - osp16-ctrl01.ctlplane.voltron.xyz
+    tuned_short_bootstrap_node_name: osp16-ctrl01
+    tuned_short_node_names:
+    - osp16-ctrl01
+    zaqar_api_network: internal_api
+  AodhPassword: nufuInAmer0Xjo8tolRaiI4cO
+  BarbicanPassword: HIZLw4MSyvJ9j9d1TBAmnVDNH
+  BarbicanSimpleCryptoKek: s9IZR3DT9v_Dz1aAngowGq5wNk56SoGYM0hADlyXS9Q=
+  CeilometerMeteringSecret: aE99HtV2lyROJlU1hbzDLJ7cs
+  CeilometerPassword: 8wIwvJhyzsD6KGQCY4rQzSD9e
+  CinderPassword: JlV3LPdKviRHxIJAf2e5ADJlw
+  CongressPassword: 70IvLUyDGN4NvALIQTCmmMa5s
+  DesignatePassword: qv0aYyn4bhUAmot8eb3REnyC0
+  DesignateRndcKey: 8PxH5f4/M/e1M9UCfyMLWljG06g2zQwIPUbGoRmAtaQ=
+  Ec2ApiPassword: jBoIkFa1mF7VHUZB8KyokzEie
+  EndpointMapOverride:
+    AodhAdmin:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '8042'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:8042
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:8042
+    AodhInternal:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '8042'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:8042
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:8042
+    AodhPublic:
+      host: osp16.holaehlo.net
+      host_nobrackets: osp16.holaehlo.net
+      port: '13042'
+      protocol: https
+      uri: https://osp16.holaehlo.net:13042
+      uri_no_suffix: https://osp16.holaehlo.net:13042
+    BarbicanAdmin:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '9311'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:9311
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:9311
+    BarbicanInternal:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '9311'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:9311
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:9311
+    BarbicanPublic:
+      host: osp16.holaehlo.net
+      host_nobrackets: osp16.holaehlo.net
+      port: '13311'
+      protocol: https
+      uri: https://osp16.holaehlo.net:13311
+      uri_no_suffix: https://osp16.holaehlo.net:13311
+    CephDashboardInternal:
+      host: osp16oc.ctlplane.voltron.xyz
+      host_nobrackets: osp16oc.ctlplane.voltron.xyz
+      port: '8444'
+      protocol: https
+      uri: https://osp16oc.ctlplane.voltron.xyz:8444
+      uri_no_suffix: https://osp16oc.ctlplane.voltron.xyz:8444
+    CephGrafanaInternal:
+      host: osp16oc.storage.voltron.xyz
+      host_nobrackets: osp16oc.storage.voltron.xyz
+      port: '3100'
+      protocol: https
+      uri: https://osp16oc.storage.voltron.xyz:3100
+      uri_no_suffix: https://osp16oc.storage.voltron.xyz:3100
+    CephRgwAdmin:
+      host: osp16oc.storage.voltron.xyz
+      host_nobrackets: osp16oc.storage.voltron.xyz
+      port: '8080'
+      protocol: https
+      uri: https://osp16oc.storage.voltron.xyz:8080/swift/v1/AUTH_%(project_id)s
+      uri_no_suffix: https://osp16oc.storage.voltron.xyz:8080
+    CephRgwInternal:
+      host: osp16oc.storage.voltron.xyz
+      host_nobrackets: osp16oc.storage.voltron.xyz
+      port: '8080'
+      protocol: https
+      uri: https://osp16oc.storage.voltron.xyz:8080/swift/v1/AUTH_%(project_id)s
+      uri_no_suffix: https://osp16oc.storage.voltron.xyz:8080
+    CephRgwPublic:
+      host: osp16.holaehlo.net
+      host_nobrackets: osp16.holaehlo.net
+      port: '13808'
+      protocol: https
+      uri: https://osp16.holaehlo.net:13808/swift/v1/AUTH_%(project_id)s
+      uri_no_suffix: https://osp16.holaehlo.net:13808
+    CinderAdmin:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '8776'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:8776/v1/%(tenant_id)s
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:8776
+    CinderInternal:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '8776'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:8776/v1/%(tenant_id)s
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:8776
+    CinderPublic:
+      host: osp16.holaehlo.net
+      host_nobrackets: osp16.holaehlo.net
+      port: '13776'
+      protocol: https
+      uri: https://osp16.holaehlo.net:13776/v1/%(tenant_id)s
+      uri_no_suffix: https://osp16.holaehlo.net:13776
+    CinderV2Admin:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '8776'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:8776/v2/%(tenant_id)s
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:8776
+    CinderV2Internal:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '8776'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:8776/v2/%(tenant_id)s
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:8776
+    CinderV2Public:
+      host: osp16.holaehlo.net
+      host_nobrackets: osp16.holaehlo.net
+      port: '13776'
+      protocol: https
+      uri: https://osp16.holaehlo.net:13776/v2/%(tenant_id)s
+      uri_no_suffix: https://osp16.holaehlo.net:13776
+    CinderV3Admin:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '8776'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:8776/v3/%(tenant_id)s
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:8776
+    CinderV3Internal:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '8776'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:8776/v3/%(tenant_id)s
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:8776
+    CinderV3Public:
+      host: osp16.holaehlo.net
+      host_nobrackets: osp16.holaehlo.net
+      port: '13776'
+      protocol: https
+      uri: https://osp16.holaehlo.net:13776/v3/%(tenant_id)s
+      uri_no_suffix: https://osp16.holaehlo.net:13776
+    DesignateAdmin:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '9001'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:9001/v2
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:9001
+    DesignateInternal:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '9001'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:9001/v2
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:9001
+    DesignatePublic:
+      host: osp16.holaehlo.net
+      host_nobrackets: osp16.holaehlo.net
+      port: '13001'
+      protocol: https
+      uri: https://osp16.holaehlo.net:13001/v2
+      uri_no_suffix: https://osp16.holaehlo.net:13001
+    DockerRegistryInternal:
+      host: osp16oc.ctlplane.voltron.xyz
+      host_nobrackets: osp16oc.ctlplane.voltron.xyz
+      port: '8787'
+      protocol: https
+      uri: https://osp16oc.ctlplane.voltron.xyz:8787
+      uri_no_suffix: https://osp16oc.ctlplane.voltron.xyz:8787
+    Ec2ApiAdmin:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '8788'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:8788
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:8788
+    Ec2ApiInternal:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '8788'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:8788
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:8788
+    Ec2ApiPublic:
+      host: osp16.holaehlo.net
+      host_nobrackets: osp16.holaehlo.net
+      port: '13788'
+      protocol: https
+      uri: https://osp16.holaehlo.net:13788
+      uri_no_suffix: https://osp16.holaehlo.net:13788
+    GaneshaInternal:
+      host: 172.16.24.20
+      host_nobrackets: 172.16.24.20
+      port: '2049'
+      protocol: nfs
+      uri: nfs://172.16.24.20:2049
+      uri_no_suffix: nfs://172.16.24.20:2049
+    GlanceAdmin:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '9292'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:9292
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:9292
+    GlanceInternal:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '9292'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:9292
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:9292
+    GlancePublic:
+      host: osp16.holaehlo.net
+      host_nobrackets: osp16.holaehlo.net
+      port: '13292'
+      protocol: https
+      uri: https://osp16.holaehlo.net:13292
+      uri_no_suffix: https://osp16.holaehlo.net:13292
+    GnocchiAdmin:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '8041'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:8041
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:8041
+    GnocchiInternal:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '8041'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:8041
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:8041
+    GnocchiPublic:
+      host: osp16.holaehlo.net
+      host_nobrackets: osp16.holaehlo.net
+      port: '13041'
+      protocol: https
+      uri: https://osp16.holaehlo.net:13041
+      uri_no_suffix: https://osp16.holaehlo.net:13041
+    HeatAdmin:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '8004'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:8004/v1/%(tenant_id)s
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:8004
+    HeatCfnAdmin:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '8000'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:8000/v1
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:8000
+    HeatCfnInternal:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '8000'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:8000/v1
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:8000
+    HeatCfnPublic:
+      host: osp16.holaehlo.net
+      host_nobrackets: osp16.holaehlo.net
+      port: '13005'
+      protocol: https
+      uri: https://osp16.holaehlo.net:13005/v1
+      uri_no_suffix: https://osp16.holaehlo.net:13005
+    HeatInternal:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '8004'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:8004/v1/%(tenant_id)s
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:8004
+    HeatPublic:
+      host: osp16.holaehlo.net
+      host_nobrackets: osp16.holaehlo.net
+      port: '13004'
+      protocol: https
+      uri: https://osp16.holaehlo.net:13004/v1/%(tenant_id)s
+      uri_no_suffix: https://osp16.holaehlo.net:13004
+    HeatUIConfig:
+      host: osp16.holaehlo.net
+      host_nobrackets: osp16.holaehlo.net
+      port: '443'
+      protocol: https
+      uri: https://osp16.holaehlo.net:443/heat/v1/%(project_id)s
+      uri_no_suffix: https://osp16.holaehlo.net:443
+    HorizonPublic:
+      host: osp16.holaehlo.net
+      host_nobrackets: osp16.holaehlo.net
+      port: '443'
+      protocol: https
+      uri: https://osp16.holaehlo.net:443/dashboard
+      uri_no_suffix: https://osp16.holaehlo.net:443
+    IronicAdmin:
+      host: osp16oc.ctlplane.voltron.xyz
+      host_nobrackets: osp16oc.ctlplane.voltron.xyz
+      port: '6385'
+      protocol: https
+      uri: https://osp16oc.ctlplane.voltron.xyz:6385/v1
+      uri_no_suffix: https://osp16oc.ctlplane.voltron.xyz:6385
+    IronicInspectorAdmin:
+      host: osp16oc.ctlplane.voltron.xyz
+      host_nobrackets: osp16oc.ctlplane.voltron.xyz
+      port: '5050'
+      protocol: http
+      uri: http://osp16oc.ctlplane.voltron.xyz:5050
+      uri_no_suffix: http://osp16oc.ctlplane.voltron.xyz:5050
+    IronicInspectorInternal:
+      host: osp16oc.ctlplane.voltron.xyz
+      host_nobrackets: osp16oc.ctlplane.voltron.xyz
+      port: '5050'
+      protocol: http
+      uri: http://osp16oc.ctlplane.voltron.xyz:5050
+      uri_no_suffix: http://osp16oc.ctlplane.voltron.xyz:5050
+    IronicInspectorPublic:
+      host: osp16.holaehlo.net
+      host_nobrackets: osp16.holaehlo.net
+      port: '13050'
+      protocol: https
+      uri: https://osp16.holaehlo.net:13050
+      uri_no_suffix: https://osp16.holaehlo.net:13050
+    IronicInspectorUIConfig:
+      host: osp16.holaehlo.net
+      host_nobrackets: osp16.holaehlo.net
+      port: '443'
+      protocol: https
+      uri: https://osp16.holaehlo.net:443/ironic-inspector
+      uri_no_suffix: https://osp16.holaehlo.net:443
+    IronicInternal:
+      host: osp16oc.ctlplane.voltron.xyz
+      host_nobrackets: osp16oc.ctlplane.voltron.xyz
+      port: '6385'
+      protocol: https
+      uri: https://osp16oc.ctlplane.voltron.xyz:6385/v1
+      uri_no_suffix: https://osp16oc.ctlplane.voltron.xyz:6385
+    IronicPublic:
+      host: osp16.holaehlo.net
+      host_nobrackets: osp16.holaehlo.net
+      port: '13385'
+      protocol: https
+      uri: https://osp16.holaehlo.net:13385/v1
+      uri_no_suffix: https://osp16.holaehlo.net:13385
+    IronicUIConfig:
+      host: osp16.holaehlo.net
+      host_nobrackets: osp16.holaehlo.net
+      port: '443'
+      protocol: https
+      uri: https://osp16.holaehlo.net:443/ironic
+      uri_no_suffix: https://osp16.holaehlo.net:443
+    KeystoneAdmin:
+      host: osp16oc.ctlplane.voltron.xyz
+      host_nobrackets: osp16oc.ctlplane.voltron.xyz
+      port: '35357'
+      protocol: https
+      uri: https://osp16oc.ctlplane.voltron.xyz:35357/
+      uri_no_suffix: https://osp16oc.ctlplane.voltron.xyz:35357
+    KeystoneInternal:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '5000'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:5000/
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:5000
+    KeystonePublic:
+      host: osp16.holaehlo.net
+      host_nobrackets: osp16.holaehlo.net
+      port: '13000'
+      protocol: https
+      uri: https://osp16.holaehlo.net:13000/
+      uri_no_suffix: https://osp16.holaehlo.net:13000
+    KeystoneUIConfig:
+      host: osp16.holaehlo.net
+      host_nobrackets: osp16.holaehlo.net
+      port: '443'
+      protocol: https
+      uri: https://osp16.holaehlo.net:443/keystone/v3
+      uri_no_suffix: https://osp16.holaehlo.net:443
+    KeystoneV3Admin:
+      host: osp16oc.ctlplane.voltron.xyz
+      host_nobrackets: osp16oc.ctlplane.voltron.xyz
+      port: '35357'
+      protocol: https
+      uri: https://osp16oc.ctlplane.voltron.xyz:35357/v3
+      uri_no_suffix: https://osp16oc.ctlplane.voltron.xyz:35357
+    KeystoneV3Internal:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '5000'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:5000/v3
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:5000
+    KeystoneV3Public:
+      host: osp16.holaehlo.net
+      host_nobrackets: osp16.holaehlo.net
+      port: '13000'
+      protocol: https
+      uri: https://osp16.holaehlo.net:13000/v3
+      uri_no_suffix: https://osp16.holaehlo.net:13000
+    ManilaAdmin:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '8786'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:8786/v2/%(tenant_id)s
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:8786
+    ManilaInternal:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '8786'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:8786/v2/%(tenant_id)s
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:8786
+    ManilaPublic:
+      host: osp16.holaehlo.net
+      host_nobrackets: osp16.holaehlo.net
+      port: '13786'
+      protocol: https
+      uri: https://osp16.holaehlo.net:13786/v2/%(tenant_id)s
+      uri_no_suffix: https://osp16.holaehlo.net:13786
+    ManilaV1Admin:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '8786'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:8786/v1/%(tenant_id)s
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:8786
+    ManilaV1Internal:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '8786'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:8786/v1/%(tenant_id)s
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:8786
+    ManilaV1Public:
+      host: osp16.holaehlo.net
+      host_nobrackets: osp16.holaehlo.net
+      port: '13786'
+      protocol: https
+      uri: https://osp16.holaehlo.net:13786/v1/%(tenant_id)s
+      uri_no_suffix: https://osp16.holaehlo.net:13786
+    MetricsQdrPublic:
+      host: osp16.holaehlo.net
+      host_nobrackets: osp16.holaehlo.net
+      port: '5666'
+      protocol: amqp
+      uri: amqp://osp16.holaehlo.net:5666
+      uri_no_suffix: amqp://osp16.holaehlo.net:5666
+    MistralAdmin:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '8989'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:8989/v2
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:8989
+    MistralInternal:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '8989'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:8989/v2
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:8989
+    MistralPublic:
+      host: osp16.holaehlo.net
+      host_nobrackets: osp16.holaehlo.net
+      port: '13989'
+      protocol: https
+      uri: https://osp16.holaehlo.net:13989/v2
+      uri_no_suffix: https://osp16.holaehlo.net:13989
+    MistralUIConfig:
+      host: osp16.holaehlo.net
+      host_nobrackets: osp16.holaehlo.net
+      port: '443'
+      protocol: https
+      uri: https://osp16.holaehlo.net:443/mistral/v2
+      uri_no_suffix: https://osp16.holaehlo.net:443
+    MysqlCellInternal:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '3306'
+      protocol: mysql+pymysql
+      uri: mysql+pymysql://osp16oc.internalapi.voltron.xyz:3306
+      uri_no_suffix: mysql+pymysql://osp16oc.internalapi.voltron.xyz:3306
+    MysqlInternal:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '3306'
+      protocol: mysql+pymysql
+      uri: mysql+pymysql://osp16oc.internalapi.voltron.xyz:3306
+      uri_no_suffix: mysql+pymysql://osp16oc.internalapi.voltron.xyz:3306
+    NeutronAdmin:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '9696'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:9696
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:9696
+    NeutronInternal:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '9696'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:9696
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:9696
+    NeutronPublic:
+      host: osp16.holaehlo.net
+      host_nobrackets: osp16.holaehlo.net
+      port: '13696'
+      protocol: https
+      uri: https://osp16.holaehlo.net:13696
+      uri_no_suffix: https://osp16.holaehlo.net:13696
+    NovaAdmin:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '8774'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:8774/v2.1
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:8774
+    NovaInternal:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '8774'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:8774/v2.1
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:8774
+    NovaMetadataCellInternal:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '8775'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:8775
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:8775
+    NovaMetadataInternal:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '8775'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:8775
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:8775
+    NovaPublic:
+      host: osp16.holaehlo.net
+      host_nobrackets: osp16.holaehlo.net
+      port: '13774'
+      protocol: https
+      uri: https://osp16.holaehlo.net:13774/v2.1
+      uri_no_suffix: https://osp16.holaehlo.net:13774
+    NovaUIConfig:
+      host: osp16.holaehlo.net
+      host_nobrackets: osp16.holaehlo.net
+      port: '443'
+      protocol: https
+      uri: https://osp16.holaehlo.net:443/nova/v2.1
+      uri_no_suffix: https://osp16.holaehlo.net:443
+    NovaVNCProxyAdmin:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '6080'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:6080
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:6080
+    NovaVNCProxyCellPublic:
+      host: osp16.holaehlo.net
+      host_nobrackets: osp16.holaehlo.net
+      port: '13080'
+      protocol: https
+      uri: https://osp16.holaehlo.net:13080
+      uri_no_suffix: https://osp16.holaehlo.net:13080
+    NovaVNCProxyInternal:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '6080'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:6080
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:6080
+    NovaVNCProxyPublic:
+      host: osp16.holaehlo.net
+      host_nobrackets: osp16.holaehlo.net
+      port: '13080'
+      protocol: https
+      uri: https://osp16.holaehlo.net:13080
+      uri_no_suffix: https://osp16.holaehlo.net:13080
+    NovajoinAdmin:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '9090'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:9090/v1
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:9090
+    NovajoinInternal:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '9090'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:9090/v1
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:9090
+    NovajoinPublic:
+      host: osp16.holaehlo.net
+      host_nobrackets: osp16.holaehlo.net
+      port: '13090'
+      protocol: https
+      uri: https://osp16.holaehlo.net:13090/v1
+      uri_no_suffix: https://osp16.holaehlo.net:13090
+    OctaviaAdmin:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '9876'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:9876
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:9876
+    OctaviaInternal:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '9876'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:9876
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:9876
+    OctaviaPublic:
+      host: osp16.holaehlo.net
+      host_nobrackets: osp16.holaehlo.net
+      port: '13876'
+      protocol: https
+      uri: https://osp16.holaehlo.net:13876
+      uri_no_suffix: https://osp16.holaehlo.net:13876
+    PankoAdmin:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '8977'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:8977
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:8977
+    PankoInternal:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '8977'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:8977
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:8977
+    PankoPublic:
+      host: osp16.holaehlo.net
+      host_nobrackets: osp16.holaehlo.net
+      port: '13977'
+      protocol: https
+      uri: https://osp16.holaehlo.net:13977
+      uri_no_suffix: https://osp16.holaehlo.net:13977
+    PlacementAdmin:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '8778'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:8778/placement
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:8778
+    PlacementInternal:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '8778'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:8778/placement
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:8778
+    PlacementPublic:
+      host: osp16.holaehlo.net
+      host_nobrackets: osp16.holaehlo.net
+      port: '13778'
+      protocol: https
+      uri: https://osp16.holaehlo.net:13778/placement
+      uri_no_suffix: https://osp16.holaehlo.net:13778
+    SaharaAdmin:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '8386'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:8386
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:8386
+    SaharaInternal:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '8386'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:8386
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:8386
+    SaharaPublic:
+      host: osp16.holaehlo.net
+      host_nobrackets: osp16.holaehlo.net
+      port: '13386'
+      protocol: https
+      uri: https://osp16.holaehlo.net:13386
+      uri_no_suffix: https://osp16.holaehlo.net:13386
+    SwiftAdmin:
+      host: osp16oc.storage.voltron.xyz
+      host_nobrackets: osp16oc.storage.voltron.xyz
+      port: '8080'
+      protocol: https
+      uri: https://osp16oc.storage.voltron.xyz:8080
+      uri_no_suffix: https://osp16oc.storage.voltron.xyz:8080
+    SwiftInternal:
+      host: osp16oc.storage.voltron.xyz
+      host_nobrackets: osp16oc.storage.voltron.xyz
+      port: '8080'
+      protocol: https
+      uri: https://osp16oc.storage.voltron.xyz:8080/v1/AUTH_%(tenant_id)s
+      uri_no_suffix: https://osp16oc.storage.voltron.xyz:8080
+    SwiftPublic:
+      host: osp16.holaehlo.net
+      host_nobrackets: osp16.holaehlo.net
+      port: '13808'
+      protocol: https
+      uri: https://osp16.holaehlo.net:13808/v1/AUTH_%(tenant_id)s
+      uri_no_suffix: https://osp16.holaehlo.net:13808
+    SwiftS3Admin:
+      host: osp16oc.storage.voltron.xyz
+      host_nobrackets: osp16oc.storage.voltron.xyz
+      port: '8080'
+      protocol: https
+      uri: https://osp16oc.storage.voltron.xyz:8080
+      uri_no_suffix: https://osp16oc.storage.voltron.xyz:8080
+    SwiftS3Internal:
+      host: osp16oc.storage.voltron.xyz
+      host_nobrackets: osp16oc.storage.voltron.xyz
+      port: '8080'
+      protocol: https
+      uri: https://osp16oc.storage.voltron.xyz:8080
+      uri_no_suffix: https://osp16oc.storage.voltron.xyz:8080
+    SwiftS3Public:
+      host: osp16.holaehlo.net
+      host_nobrackets: osp16.holaehlo.net
+      port: '13808'
+      protocol: https
+      uri: https://osp16.holaehlo.net:13808
+      uri_no_suffix: https://osp16.holaehlo.net:13808
+    SwiftUIConfig:
+      host: osp16.holaehlo.net
+      host_nobrackets: osp16.holaehlo.net
+      port: '443'
+      protocol: https
+      uri: https://osp16.holaehlo.net:443/swift/v1/AUTH_%(project_id)s
+      uri_no_suffix: https://osp16.holaehlo.net:443
+    ZaqarAdmin:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '8888'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:8888
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:8888
+    ZaqarInternal:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '8888'
+      protocol: https
+      uri: https://osp16oc.internalapi.voltron.xyz:8888
+      uri_no_suffix: https://osp16oc.internalapi.voltron.xyz:8888
+    ZaqarPublic:
+      host: osp16.holaehlo.net
+      host_nobrackets: osp16.holaehlo.net
+      port: '13888'
+      protocol: https
+      uri: https://osp16.holaehlo.net:13888
+      uri_no_suffix: https://osp16.holaehlo.net:13888
+    ZaqarWebSocketAdmin:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '9000'
+      protocol: wss
+      uri: wss://osp16oc.internalapi.voltron.xyz:9000
+      uri_no_suffix: wss://osp16oc.internalapi.voltron.xyz:9000
+    ZaqarWebSocketInternal:
+      host: osp16oc.internalapi.voltron.xyz
+      host_nobrackets: osp16oc.internalapi.voltron.xyz
+      port: '9000'
+      protocol: wss
+      uri: wss://osp16oc.internalapi.voltron.xyz:9000
+      uri_no_suffix: wss://osp16oc.internalapi.voltron.xyz:9000
+    ZaqarWebSocketPublic:
+      host: osp16.holaehlo.net
+      host_nobrackets: osp16.holaehlo.net
+      port: '9000'
+      protocol: wss
+      uri: wss://osp16.holaehlo.net:9000
+      uri_no_suffix: wss://osp16.holaehlo.net:9000
+    ZaqarWebSocketUIConfig:
+      host: osp16.holaehlo.net
+      host_nobrackets: osp16.holaehlo.net
+      port: '443'
+      protocol: wss
+      uri: wss://osp16.holaehlo.net:443/zaqar
+      uri_no_suffix: wss://osp16.holaehlo.net:443
+  EtcdInitialClusterToken: mz9mg0P6x1QQc2kNTHMoqy4Lz
+  ExtraHostFileEntries:
+  - 172.16.24.2 osp16-dir.ctlplane.voltron.xyz osp16-dir.ctlplane
+  - 172.25.51.11 osp16-ctrl01.voltron.xyz osp16-ctrl01
+  - 172.25.53.11 osp16-ctrl01.storage.voltron.xyz osp16-ctrl01.storage
+  - 172.25.54.11 osp16-ctrl01.storagemgmt.voltron.xyz osp16-ctrl01.storagemgmt
+  - 172.25.51.11 osp16-ctrl01.internalapi.voltron.xyz osp16-ctrl01.internalapi
+  - 172.25.52.11 osp16-ctrl01.tenant.voltron.xyz osp16-ctrl01.tenant
+  - 172.25.50.11 osp16-ctrl01.external.voltron.xyz osp16-ctrl01.external
+  - 172.16.24.11 osp16-ctrl01.ctlplane.voltron.xyz osp16-ctrl01.ctlplane
+  - 172.16.24.20  osp16oc.ctlplane.voltron.xyz
+  - 172.25.53.20  osp16oc.storage.voltron.xyz
+  - 172.25.54.20  osp16oc.storagemgmt.voltron.xyz
+  - 172.25.51.20  osp16oc.internalapi.voltron.xyz
+  - 172.25.50.20  osp16.holaehlo.net
+  GlancePassword: kg1PZOCXn0dYpInmaEppIevf8
+  GlobalConfigExtraMapData:
+    oslo_messaging_notify_password: TUaZh0gr4gxyoqSzTd79fcEiE
+    oslo_messaging_notify_port: 5672
+    oslo_messaging_notify_scheme: rabbit
+    oslo_messaging_notify_use_ssl: 'True'
+    oslo_messaging_notify_user_name: guest
+    oslo_messaging_rpc_password: TUaZh0gr4gxyoqSzTd79fcEiE
+    oslo_messaging_rpc_port: 5672
+    oslo_messaging_rpc_scheme: rabbit
+    oslo_messaging_rpc_use_ssl: 'True'
+    oslo_messaging_rpc_user_name: guest
+  GnocchiPassword: DW8o8YyhSyfEiIz38jbkEYl3Z
+  HAProxyStatsPassword: w2rfccsPcysaBfIF8sRA0thbc
+  HeatAuthEncryptionKey: KFa3CNXLJ9i3FiszbAkzBl68Ud14NpWx
+  HeatPassword: gNGdeBsZWsXO4SOwOplXNeMkC
+  HeatStackDomainAdminPassword: H05JmR3IIYx7GJ6R1jUajm6rD
+  HorizonSecret: CLqYzh0SX9
+  IronicPassword: 7qIBho4vRqtmhXI0eNUwTkPIW
+  KeystoneCredential0: woZqTQSyJENufbcQKsV6KN5cxUq09KTVuqL2T5h8IUk=
+  KeystoneCredential1: IrVa9XGSjJkc1QX3h9qN5Un0Yj5_ApDCQ4Y6yqMwaHM=
+  KeystoneFernetKey0: vR6u--W1MZSN_xyOvPeUPcdtirkKY2QSrR98zu3JtRI=
+  KeystoneFernetKey1: OgFhp1seZs66aQ9YiV5lUl4t9WGRvH5jbQP0gSsMutI=
+  KeystoneFernetKeys:
+    /etc/keystone/fernet-keys/0:
+      content: y9neIiki-UIioKAYp2QafELsF0cq7usALTQW4fMPWq0=
+    /etc/keystone/fernet-keys/1:
+      content: PkphruYFWnNeb3gntvpnglasXkXu_6b_iibOujLGAig=
+  LibvirtTLSPassword: hPXVl6kE9MovNPICLhZj4hIhY
+  ManilaPassword: 3voBrgNTqv71FZN7yuNc9FHxz
+  MigrationSshKey:
+    private_key: '-----BEGIN RSA PRIVATE KEY-----
+
+      MIIEowIBAAKCAQEA+D3MVl5nnRG3D/TH8YwEe8gEkiMvbZ0OCME4KgQTuY90nKFa
+
+      MkAlT3iym3qvj4AYdWmop/yPp34jNN0fNUe4vhWaKLjpZizUdjjdR00vSmuWcwbt
+
+      OUPRly0QRoeLfgNK+DnK4IdkeLuoEZ4j4mekEHSM8eP7HJVLXv7C9pE4RUWsRx2J
+
+      SaX7VB/TbQVqyUzc3clFlWo97dFyt8Pg1TqZuSvZ/RpDbPPtPQwAB/Wq2ECYzvdk
+
+      V0nrs41B7wOTqcZqCeJIPFo7/0LI7XIawbdkBCRp0C6L7/uMVuWm8cLAr02eiVzA
+
+      gxumzFkpTBOcrQCO3iVCYZmxQVpMuF0oopp2yQIDAQABAoIBABzOZwjauaFTbe/P
+
+      Euinu9l1U3p11MoegINpkI/nmzZcPEb0vle4c9vuAKPkL70yOyRc13Ju72ibTZCT
+
+      3Ew9f2WnchUpqAPwTdNOM/dTMJqtM28zrZGImii11P6qOfisfyWg5zb43yLXe+BX
+
+      foiGSFaUf8qODxS5Cl8CpzMflO0MtzeURZ/fL8IyylSHHUzwQmS2SptmbKr6AsRZ
+
+      tb7UDo8VdWk+fMpignVc0jlrg6h10FecQxTF0IqEKWw/aKlFMnBQX4pF3m9u/sTq
+
+      74/z5FEwQViYYKpQyRD7VYiyKljkXm87PxWDAHch0Kg30zHCAPbFSBTaXceZQ7HJ
+
+      mTjwT4ECgYEA/sBHO1HHixKPJ+tr5FTUMPY2g8SfobOCEvCOo0Mmpzpg5FBUwF1z
+
+      CQXeRPv0xDQzCxk6pXfBIUuBKZAVI/HVVEbT2yXH/SUFJDEVtfH9ClB/qBoZYB1H
+
+      2/JskN1qj1OFoRuQYyeMS8Y9/UeATbxydsErDMcB6a0piD2Mm9i81NECgYEA+XVZ
+
+      nQkcOIhN5niyrTK+glU4ogyKYXlWFN4u4AoOYUW8KlUV1BbmJvjCf0niGPdrAY96
+
+      EklfEqJThzTKypVO6TW3Nm7RxpFZEj3NLeDylzMaQMHF0ihbUDGydnP0c14uRymK
+
+      2QGt6+afZ1RN+/oKhL+OkCZ6M/jOD3ohrNmz4HkCgYARJGsmqLgeuZ78drEJ6lNl
+
+      AAxnDYIYZXXpRFq0zb36HsmKU4WAdElbYBO23KV51nFg28/AdrB+RxBn9ZQWmR1b
+
+      0HBNHNu6QxV3e/4UAjaezQ/qBeeTOiUtvcBkdyHGhz5EuxAaO/0K1Eozku4lTPr+
+
+      1rzI3VNZoBddXZbqnckHIQKBgAy4jT9SzZucZ8yO7x2h7tEao26wEQZzd45M3jsS
+
+      iDUxpyzJdfmAyW/HU7PGAr+fLlfAB0uTbkO2/2dvq7+06Xc/A/7Em/HyS4aAnEvw
+
+      oq5PLtGKkBntcOqf/ifINfkEHnwGhEwYp9PVyN8uD2QAFjU6x3xWWfj4gRmM8tar
+
+      q16RAoGBAKa403m8GS8rpTWgR2VGULP5GvE3Fb8p5seCLW/0H4zPtbfK2pi7pJOE
+
+      YWH8PfuDyrKyMEJ4YBNZ/GjURLEqLrcsltisjbzD83uJeSvceDnrNJZstDExfDwn
+
+      vGDm+PaAIfn2xeprwYPw2J6ieO9zYV6EevF9lXdRcxgCyerxfsVV
+
+      -----END RSA PRIVATE KEY-----
+
+      '
+    public_key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD4PcxWXmedEbcP9MfxjAR7yASSIy9tnQ4IwTgqBBO5j3ScoVoyQCVPeLKbeq+PgBh1aain/I+nfiM03R81R7i+FZoouOlmLNR2ON1HTS9Ka5ZzBu05Q9GXLRBGh4t+A0r4Ocrgh2R4u6gRniPiZ6QQdIzx4/sclUte/sL2kThFRaxHHYlJpftUH9NtBWrJTNzdyUWVaj3t0XK3w+DVOpm5K9n9GkNs8+09DAAH9arYQJjO92RXSeuzjUHvA5OpxmoJ4kg8Wjv/QsjtchrBt2QEJGnQLovv+4xW5abxwsCvTZ6JXMCDG6bMWSlME5ytAI7eJUJhmbFBWky4XSiimnbJ
+      Generated by TripleO
+  MistralPassword: ZugzsenDOCoWX0VeCZLv5bmMG
+  MysqlClustercheckPassword: PV42MAd2YCqQtSnBFKMsw9gcE
+  MysqlRootPassword: 5wWyLkbdLp
+  NeutronMetadataProxySharedSecret: 1Rll16K6nteQ6hrxQA7mFusxX
+  NeutronPassword: U1lwMYeYFpkSaRF2JoCpvts1o
+  NotifyPassword: fscRDRQ587593AHaSIacUu89B
+  NovaPassword: k9WyiGlESIagR3FGkk98utBTp
+  NovajoinPassword: h4GUofr8S4O5LNQ5NOzLhuK21
+  OctaviaCaKeyPassphrase: 0PrrJXk4W9vzkbGynynMDt8yj
+  OctaviaHeartbeatKey: IIUXSLH6MBaHSqP4g7geEJC20
+  OctaviaPassword: PmshxAqvNPCiCgQHxzpM8TsBj
+  OctaviaServerCertsKeyPassphrase: bdtXr3q945y7hQNbr7rrRYt34GlZzdFS
+  OpenDaylightPassword: hb5RK3JAxRxcIbMyMJ2WMLOrR
+  PacemakerRemoteAuthkey: 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
+  PankoPassword: S13Kcjo9A0KLu12XseRblizn1
+  PcsdPassword: zS54NMLMoyZzpFRX
+  PlacementPassword: A5RwA9mcwFlu2Ifx2tPtMY7iq
+  RabbitCookie: COhmV25g07pAV6Ce6aLm
+  RabbitPassword: yRAHFflnOiQrYmAK9xyxzIaS6
+  RedisPassword: PDRyKnpZQvyxR8Al55gOxyjt4
+  RpcPassword: TUaZh0gr4gxyoqSzTd79fcEiE
+  SaharaPassword: H4wvWxoUzV2TkAsyvGgDeA02b
+  SnmpdReadonlyUserPassword: vJ3Cf4KbgEp0ZXD4N5XHbTWf5
+  SwiftHashSuffix: Mh9xiWZPgIfUpMZ0TSUi7jRPa
+  SwiftPassword: 0UNQ5m5HqagJhpJsgtec8SEZv
+  ZaqarPassword: i4rEN8tqbkZxv3xvCA0RQZX67

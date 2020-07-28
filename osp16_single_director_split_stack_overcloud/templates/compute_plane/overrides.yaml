@@ -1,0 +1,15 @@
+# Environment file containing the node counts
+# Flavors and general customizations
+parameter_defaults:
+  OvercloudControllerFlavor: baremetal
+  OvercloudComputeFlavor: baremetal
+  ControllerCount: 0
+  ComputeCount: 2
+
+  # Miscellaneous overcloud level parameters
+  TimeZone: 'America/Chicago'
+  NodeRootPassword: 'redhat'
+  
+  # Networks are managed by the control plane
+  # stack. We set this to false
+  ManageNetworks: false

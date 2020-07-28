@@ -1,0 +1,7 @@
+# Environment file demonstrating how to pre-assign hostnames to all node types
+parameter_defaults:
+  ComputeSchedulerHints:
+    'capabilities:node': 'compute-%index%'
+  HostnameMap:
+    vxyz-labs-computes-compute-0: osp16-compute01
+    vxyz-labs-computes-compute-1: osp16-compute02

@@ -1,0 +1,11 @@
+# Satellite Registration Details
+resource_registry:
+  OS::TripleO::Services::Rhsm: /usr/share/openstack-tripleo-heat-templates/deployment/rhsm/rhsm-baremetal-ansible.yaml
+
+parameter_defaults:
+  RhsmVars:
+    rhsm_activation_key: 'osp16-0-ak'
+    rhsm_method: 'satellite'
+    rhsm_org_id: 'VXYZ_Labs'
+    rhsm_server_hostname: 'satellite.voltron.xyz'
+    rhsm_baseurl: 'https://satellite.voltron.xyz/pulp/repos'

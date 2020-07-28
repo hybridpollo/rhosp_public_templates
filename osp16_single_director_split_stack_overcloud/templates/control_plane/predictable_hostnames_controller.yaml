@@ -1,0 +1,6 @@
+# Environment file demonstrating how to pre-assign hostnames to all node types
+parameter_defaults:
+  ControllerSchedulerHints:
+    'capabilities:node': 'control-%index%'
+  HostnameMap:
+    vxyz-labs-central-controller-0: osp16-ctrl01

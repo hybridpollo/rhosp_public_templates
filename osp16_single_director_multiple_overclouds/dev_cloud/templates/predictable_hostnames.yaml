@@ -1,0 +1,9 @@
+# Environment file demonstrating how to pre-assign hostnames to all node types
+parameter_defaults:
+  ControllerSchedulerHints:
+    'capabilities:node': 'dev-control-%index%'
+  ComputeSchedulerHints:
+    'capabilities:node': 'dev-compute-%index%'
+  HostnameMap:
+    dev-overcloud-controller-0: dev-osp16-ctrl01
+    dev-overcloud-compute-0: dev-osp16-comp01

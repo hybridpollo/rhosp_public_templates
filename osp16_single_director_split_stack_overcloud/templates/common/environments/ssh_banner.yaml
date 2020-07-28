@@ -1,0 +1,8 @@
+parameter_defaults:
+  BannerText: |
+    ******************************************************************
+    *     This system is for the use of authorized users only.       *
+    ******************************************************************
+  MessageOfTheDay: |
+    ALERT! You are entering into a secured area!
+    This service is restricted to authorized users only.

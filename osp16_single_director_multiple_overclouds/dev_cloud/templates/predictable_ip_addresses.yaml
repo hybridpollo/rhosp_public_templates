@@ -1,0 +1,57 @@
+# Environment file demonstrating how to pre-assign IPs to all node types
+resource_registry:
+  #Controllers
+  OS::TripleO::Controller::Ports::ExternalPort: /usr/share/openstack-tripleo-heat-templates/network/ports/external_dev_overcloud_from_pool.yaml
+  OS::TripleO::Controller::Ports::InternalApiPort: /usr/share/openstack-tripleo-heat-templates/network/ports/internal_api_dev_overcloud_from_pool.yaml
+  OS::TripleO::Controller::Ports::StoragePort: /usr/share/openstack-tripleo-heat-templates/network/ports/storage_dev_overcloud_from_pool.yaml
+  OS::TripleO::Controller::Ports::StorageMgmtPort: /usr/share/openstack-tripleo-heat-templates/network/ports/storage_mgmt_dev_overcloud_from_pool.yaml
+  OS::TripleO::Controller::Ports::TenantPort: /usr/share/openstack-tripleo-heat-templates/network/ports/tenant_dev_overcloud_from_pool.yaml
+
+  #Computes
+  OS::TripleO::Compute::Ports::InternalApiPort: /usr/share/openstack-tripleo-heat-templates/network/ports/internal_api_dev_overcloud_from_pool.yaml
+  OS::TripleO::Compute::Ports::StoragePort: /usr/share/openstack-tripleo-heat-templates/network/ports/storage_dev_overcloud_from_pool.yaml
+  OS::TripleO::Compute::Ports::StorageMgmtPort: /usr/share/openstack-tripleo-heat-templates/network/ports/storage_mgmt_dev_overcloud_from_pool.yaml
+  OS::TripleO::Compute::Ports::TenantPort: /usr/share/openstack-tripleo-heat-templates/network/ports/tenant_dev_overcloud_from_pool.yaml
+
+parameter_defaults:
+  ControllerIPs:
+    ctlplane:
+    - 172.16.24.111
+    external_dev_overcloud:
+    - 192.168.150.11
+    internal_api_dev_overcloud:
+    - 192.168.151.11
+    tenant_dev_overcloud:
+    - 192.168.152.11
+    storage_dev_overcloud:
+    - 192.168.153.11
+    storage_mgmt_dev_overcloud:
+    - 192.168.154.11
+
+  ComputeIPs:
+    ctlplane:
+    - 172.16.24.114
+    internal_api_dev_overcloud:
+    - 192.168.151.14
+    tenant_dev_overcloud:
+    - 192.168.152.14
+    storage_dev_overcloud:
+    - 192.168.153.14
+    storage_mgmt_dev_overcloud:
+    - 192.168.154.14
+
+  # Predictable VIPS for the controllers
+  ControlFixedIPs: 
+  - ip_address: 172.16.24.200
+  PublicVirtualFixedIPs: 
+  - ip_address: 192.168.150.20
+  InternalApiVirtualFixedIPs: 
+  - ip_address: 192.168.151.20
+  StorageVirtualFixedIPs:
+  - ip_address: 192.168.153.20
+  StorageMgmtVirtualFixedIPs: 
+  - ip_address: 192.168.154.20
+  RedisVirtualFixedIPs:
+  - ip_address: 192.168.151.21
+  OVNDBsVirtualFixedIPs:
+  - ip_address: 192.168.151.22

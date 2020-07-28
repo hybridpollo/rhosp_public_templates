@@ -1,0 +1,34 @@
+# Environment file demonstrating how to pre-assign IPs to all node types
+resource_registry:
+  #Computes
+  OS::TripleO::Compute::Ports::InternalApiPort: /usr/share/openstack-tripleo-heat-templates/network/ports/internal_api_from_pool.yaml
+  OS::TripleO::Compute::Ports::StoragePort: /usr/share/openstack-tripleo-heat-templates/network/ports/storage_from_pool.yaml
+  OS::TripleO::Compute::Ports::StorageMgmtPort: /usr/share/openstack-tripleo-heat-templates/network/ports/storage_mgmt_from_pool.yaml
+  OS::TripleO::Compute::Ports::TenantPort: /usr/share/openstack-tripleo-heat-templates/network/ports/tenant_from_pool.yaml
+
+  # Disabling Port assignments for the VIPs
+  #OS::TripleO::Network::Ports::ControlPlaneVipPort: OS::Heat::None
+  OS::TripleO::Network::Ports::StorageVipPort: OS::Heat::None
+  OS::TripleO::Network::Ports::StorageMgmtVipPort:  OS::Heat::None
+  OS::TripleO::Network::Ports::InternalApiVipPort: OS::Heat::None 
+  OS::TripleO::Network::Ports::ExternalVipPort: OS::Heat::None 
+  OS::TripleO::Network::Ports::RedisVipPort: OS::Heat::None
+  OS::TripleO::Network::Ports::OVNDBsVipPort: OS::Heat::None
+
+parameter_defaults:
+  ComputeIPs:
+    ctlplane:
+    - 172.16.24.14
+    - 172.16.24.15
+    internal_api:
+    - 172.25.51.14
+    - 172.25.51.15
+    tenant:
+    - 172.25.52.14
+    - 172.25.52.15
+    storage:
+    - 172.25.53.14
+    - 172.25.53.15
+    storage_mgmt:
+    - 172.25.54.14
+    - 172.25.54.15

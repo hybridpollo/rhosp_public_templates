@@ -1,0 +1,29 @@
+#This file is an example of an environment file for defining the isolated
+#networks and related parameters.
+#
+resource_registry:
+  # Network Interface templates to use (these files must exist). You can
+  # override these by including one of the net-*.yaml environment files,
+  # such as net-bond-with-vlans.yaml, or modifying the list here.
+  # Port assignments for the Controller
+  OS::TripleO::Controller::Net::SoftwareConfig: ../network_interface_templates/controller.yaml
+  # Port assignments for the Compute
+  OS::TripleO::Compute::Net::SoftwareConfig: ../network_interface_templates/compute.yaml
+
+parameter_defaults:
+  DnsServers: ['172.25.48.254','8.8.4.4']
+  DnsSearchDomains: 'voltron.xyz'
+  NtpServer: ['clock.nyc.he.net','clock.fmt.he.net']
+  # List of Neutron network types for tenant networks (will be used in order)
+  NeutronNetworkType: 'geneve,vlan'
+  # Neutron VLAN ranges per network, for example 'datacentre:1:499,tenant:500:1000':
+  NeutronNetworkVLANRanges: 'datacentre:70:75'
+  # Neutron bridge mappings for ovn
+  NeutronBridgeMappings: "datacentre:br-external"
+  # Disabling distributed virtual routing in OVN until
+  # bug has been fixed: https://access.redhat.com/solutions/5049901
+  NeutronEnableDVR: false
+  # Gateway for management network
+  ManagementInterfaceDefaultRoute: '172.25.48.1'
+  # Gateway routers for routable networks
+  ExternalInterfaceDefaultRoute: '172.25.50.1'

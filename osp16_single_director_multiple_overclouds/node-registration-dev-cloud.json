@@ -1,0 +1,23 @@
+{
+    "nodes": [
+        {
+            "name":"dev-osp16-ctrl01",
+            "capabilities":"node:dev-control-0,boot_option:local",
+            "pm_type":"staging-ovirt",
+            "mac": [ "aa:aa:aa:aa:aa:0b" ],
+            "pm_user":"admin@internal",
+            "pm_password":"testmefam",
+            "pm_addr":"ovirt.infra.arl.lab",
+            "pm_vm_name":"dev-osp16-ctrl01.voltron.xyz"
+        },
+        {
+            "name":"dev-osp16-comp01",
+            "capabilities":"node:dev-compute-0,boot_option:local",
+            "pm_type":"pxe_ilo",
+            "mac": [ "aa:aa:aa:aa:aa:44" ],
+            "pm_user":"root",
+            "pm_password":"testmefam",
+            "pm_addr":"172.16.255.202"
+        }
+    ]
+}

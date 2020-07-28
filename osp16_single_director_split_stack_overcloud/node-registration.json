@@ -1,0 +1,32 @@
+{
+    "nodes": [
+        {
+            "name":"osp16-ctrl01",
+            "capabilities":"node:control-0,boot_option:local",
+            "pm_type":"staging-ovirt",
+            "mac": [ "56:6f:da:5c:00:06" ],
+            "pm_user":"admin@internal",
+            "pm_password":"testmefam",
+            "pm_addr":"ovirt.infra.arl.lab",
+            "pm_vm_name":"osp16-ctrl01.voltron.xyz"
+        },
+        {
+            "name":"osp16-comp01",
+            "capabilities":"node:compute-0,boot_option:local",
+            "pm_type":"pxe_ilo",
+            "mac": [ "d8:9d:67:14:59:28" ],
+            "pm_user":"root",
+            "pm_password":"testmefam",
+            "pm_addr":"172.16.255.201"
+        },
+        {
+            "name":"osp16-comp02",
+            "capabilities":"node:compute-1,boot_option:local",
+            "pm_type":"pxe_ilo",
+            "mac": [ "ac:16:2d:88:38:44" ],
+            "pm_user":"root",
+            "pm_password":"testmefam",
+            "pm_addr":"172.16.255.202"
+        }
+    ]
+}

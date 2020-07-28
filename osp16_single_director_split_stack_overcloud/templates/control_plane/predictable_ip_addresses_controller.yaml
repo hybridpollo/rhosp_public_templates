@@ -1,0 +1,33 @@
+# Environment file demonstrating how to pre-assign IPs to all node types
+resource_registry:
+  #Controllers
+  OS::TripleO::Controller::Ports::ExternalPort: /usr/share/openstack-tripleo-heat-templates/network/ports/external_from_pool.yaml
+  OS::TripleO::Controller::Ports::InternalApiPort: /usr/share/openstack-tripleo-heat-templates/network/ports/internal_api_from_pool.yaml
+  OS::TripleO::Controller::Ports::StoragePort: /usr/share/openstack-tripleo-heat-templates/network/ports/storage_from_pool.yaml
+  OS::TripleO::Controller::Ports::StorageMgmtPort: /usr/share/openstack-tripleo-heat-templates/network/ports/storage_mgmt_from_pool.yaml
+  OS::TripleO::Controller::Ports::TenantPort: /usr/share/openstack-tripleo-heat-templates/network/ports/tenant_from_pool.yaml
+
+parameter_defaults:
+  ControllerIPs:
+    ctlplane:
+    - 172.16.24.11
+    external:
+    - 172.25.50.11
+    internal_api:
+    - 172.25.51.11
+    tenant:
+    - 172.25.52.11
+    storage:
+    - 172.25.53.11
+    storage_mgmt:
+    - 172.25.54.11
+
+  # Predictable VIP addresses
+  # for the control plane
+  ControlFixedIPs: [{'ip_address':'172.16.24.20'}]
+  PublicVirtualFixedIPs: [{'ip_address':'172.25.50.20'}]
+  InternalApiVirtualFixedIPs: [{'ip_address':'172.25.51.20'}]
+  StorageVirtualFixedIPs: [{'ip_address':'172.25.53.20'}]
+  StorageMgmtVirtualFixedIPs: [{'ip_address':'172.25.54.20'}]
+  RedisVirtualFixedIPs: [{'ip_address':'172.25.51.21'}]
+  OVNDBsVirtualFixedIPs: [{'ip_address':'172.25.51.22'}]

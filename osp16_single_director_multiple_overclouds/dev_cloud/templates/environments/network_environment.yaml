@@ -1,0 +1,51 @@
+#This file is an example of an environment file for defining the isolated
+#networks and related parameters.
+#
+resource_registry:
+  # Network Interface templates to use (these files must exist). You can
+  # override these by including one of the net-*.yaml environment files,
+  # such as net-bond-with-vlans.yaml, or modifying the list here.
+  # Port assignments for the Controller
+  OS::TripleO::Controller::Net::SoftwareConfig: ../network_interface_templates/controller.yaml
+  # Port assignments for the Compute
+  OS::TripleO::Compute::Net::SoftwareConfig: ../network_interface_templates/compute.yaml
+
+parameter_defaults:
+  # Define the DNS servers (maximum 2) for the overcloud nodes
+  # When the list is not set or empty, the nameservers on the ctlplane subnets will be used.
+  # (ctlplane subnets nameservers are controlled by the ``undercloud_nameservers`` option in ``undercloud.conf``)
+  DnsServers: 
+  - 172.25.48.254
+  - 8.8.4.4
+  DnsSearchDomains: 'voltron.xyz'
+  # Define the Ntp servers for the overcloud nodes 
+  NtpServer: 
+  - clock.nyc.he.net
+  - clock.fmt.he.net
+  # The DNS domain used for the hosts. This must match the overcloud_domain_name configured on the undercloud.
+  CloudDomain: voltron.xyz
+
+  # List of Neutron network types for tenant networks (will be used in order)
+  NeutronNetworkType: 'geneve,vlan'
+  # Neutron VLAN ranges per network, for example 'datacentre:1:499,tenant:500:1000':
+  NeutronNetworkVLANRanges: 'datacentre:70:75'
+  # Neutron bridge mappings for ovn
+  NeutronBridgeMappings: "datacentre:br-external"
+  # Disabling distributed virtual routing in OVN until
+  # bug has been fixed: https://access.redhat.com/solutions/5049901
+  NeutronEnableDVR: false
+
+  # Gateway for management network if used
+  ManagementInterfaceDefaultRoute: '172.25.148.1'
+
+  # Gateway for External API 
+  ExternalInterfaceDefaultRoute: '172.25.150.1'
+
+  # These parameters correspond to the customized 
+  # per cloud network names defined in the network_data.yaml file
+  # These must be unique per Overcloud
+  ExternalNetValueSpecs: {'provider:physical_network': 'external_dev_overcloud', 'provider:network_type': 'flat'}
+  InternalApiNetValueSpecs: {'provider:physical_network': 'internal_api_dev_overcloud', 'provider:network_type': 'flat'}
+  StorageNetValueSpecs: {'provider:physical_network': 'storage_dev_overcloud', 'provider:network_type': 'flat'}
+  StorageMgmtNetValueSpecs: {'provider:physical_network': 'storage_mgmt_dev_overcloud', 'provider:network_type': 'flat'}
+  TenantNetValueSpecs: {'provider:physical_network': 'tenant_dev_overcloud', 'provider:network_type': 'flat'}

@@ -1,0 +1,5 @@
+parameter_defaults:
+  # The DNS name of this cloud. E.g. ci-overcloud.tripleo.org
+  # External API has a wildcard certificate 
+  # can be distinct from the internal api domain when using TLS-E
+  CloudName: dev-osp16.holaehlo.net
