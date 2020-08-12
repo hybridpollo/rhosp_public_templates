@@ -5,7 +5,7 @@ where this Undercloud feature is offered as a tech preview, however full support
 for multi-stack and multi overcloud deployments are expected on RHOSP 16.1.
 
 For more information in deploying multiple Overclouds from the same overcloud refer
-to the [Red Hat OpenStack Platform 16.0: Director Installation and Usage: Chapter 10: Deploying Multiple Overclouds.](https://access.redhat.com/documentation/en-us/red_hat_openstack_platform/16.0/html/director_installation_and_usage/deploying-multiple-overclouds)
+to the [Red Hat OpenStack Platform 16.1: Director Installation and Usage: Chapter 10: Deploying Multiple Overclouds.](https://access.redhat.com/documentation/en-us/red_hat_openstack_platform/16.1/html/director_installation_and_usage/deploying-multiple-overclouds)
 
 #### Overcloud Features in Templates
 - Multi Overcloud Cloud Support
