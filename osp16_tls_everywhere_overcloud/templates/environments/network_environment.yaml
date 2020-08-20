@@ -11,68 +11,6 @@ resource_registry:
   OS::TripleO::Compute::Net::SoftwareConfig: ../network_interface_templates/compute.yaml
 
 parameter_defaults:
-  # This section is where deployment-specific configuration is done
-  #
-  # NOTE: (Since Rocky)
-  # ControlPlaneSubnetCidr: It is no longer a requirement to provide the
-  #                         parameter. The attribute is resolved from the
-  #                         ctlplane subnet(s).
-  # ControlPlaneDefaultRoute: It is no longer a requirement to provide this
-  #                           parameter. The attribute is resolved from the
-  #                           ctlplane subnet(s).
-  # EC2MetadataIp: It is no longer a requirement to provide this parameter. The
-  #                attribute is resolved from the ctlplane subnet(s).
-  #
-
-  # Customize the IP subnet to match the local environment
-  StorageNetCidr: '172.25.53.0/24'
-  # Customize the IP range to use for static IPs and VIPs
-  StorageAllocationPools: [{'start': '172.25.53.201', 'end': '172.25.53.250'}]
-  # Customize the VLAN ID to match the local environment
-  StorageNetworkVlanID: 53
-
-
-  # Customize the IP subnet to match the local environment
-  StorageMgmtNetCidr: '172.25.54.0/24'
-  # Customize the IP range to use for static IPs and VIPs
-  StorageMgmtAllocationPools: [{'start': '172.25.54.200', 'end': '172.25.54.250'}]
-  # Customize the VLAN ID to match the local environment
-  StorageMgmtNetworkVlanID: 54
-
-
-  # Customize the IP subnet to match the local environment
-  InternalApiNetCidr: '172.25.51.0/24'
-  # Customize the IP range to use for static IPs and VIPs
-  InternalApiAllocationPools: [{'start': '172.25.51.200', 'end': '172.25.51.250'}]
-  # Customize the VLAN ID to match the local environment
-  InternalApiNetworkVlanID: 51
-
-
-  # Customize the IP subnet to match the local environment
-  TenantNetCidr: '172.25.52.0/24'
-  # Customize the IP range to use for static IPs and VIPs
-  TenantAllocationPools: [{'start': '172.25.52.200', 'end': '172.25.52.250'}]
-  # Customize the VLAN ID to match the local environment
-  TenantNetworkVlanID: 52
-
-  # Customize the IP subnet to match the local environment
-  ExternalNetCidr: '172.25.50.0/24'
-  # Customize the IP range to use for static IPs and VIPs
-  # Leave room if the external network is also used for floating IPs
-  ExternalAllocationPools: [{'start': '172.25.50.200', 'end': '172.25.50.250'}]
-  # Gateway router for routable networks
-  ExternalInterfaceDefaultRoute: '172.25.50.1'
-  # Customize the VLAN ID to match the local environment
-  ExternalNetworkVlanID: 50
-
-
-  # Customize the IP subnet to match the local environment
-  ManagementNetCidr: '172.25.48.0/23'
-  # Customize the IP range to use for static IPs and VIPs
-  ManagementAllocationPools: [{'start': '172.25.49.200', 'end': '172.25.49.250'}]
-  # Customize the VLAN ID to match the local environment
-  ManagementNetworkVlanID: 48
-
   # Define the DNS servers (maximum 2) for the overcloud nodes
   # When the list is not set or empty, the nameservers on the ctlplane subnets will be used.
   # (ctlplane subnets nameservers are controlled by the ``undercloud_nameservers`` option in ``undercloud.conf``)

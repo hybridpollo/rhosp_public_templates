@@ -11,8 +11,9 @@ resource_registry:
   OS::TripleO::Compute::Net::SoftwareConfig: ../network_interface_templates/compute.yaml
 
 parameter_defaults:
+  CloudDomain: holaehlo.net
   DnsServers: ['172.25.48.254','8.8.4.4']
-  DnsSearchDomains: 'voltron.xyz'
+  DnsSearchDomains: 'holaehlo.net'
   NtpServer: ['clock.nyc.he.net','clock.fmt.he.net']
   # List of Neutron network types for tenant networks (will be used in order)
   NeutronNetworkType: 'geneve,vlan'

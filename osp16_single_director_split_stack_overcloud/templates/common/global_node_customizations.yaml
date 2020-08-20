@@ -1,8 +1,4 @@
 parameter_defaults:
-  HorizonDebug: True
-  KeystoneDebug: True
-  HeatMaxJsonBodySize: 10000000
-
   # Extra kernel parameters that applies
   #  to all roles. Keep in mind 
   #  that ExtraSysctlSettings defined under 

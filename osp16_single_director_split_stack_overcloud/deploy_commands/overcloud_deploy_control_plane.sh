@@ -31,8 +31,7 @@ openstack overcloud deploy --stack ${STACK_NAME} \
   --templates \
   -e ${THT_DEFAULT}/environments/network-isolation.yaml \
   -e ${THT_DEFAULT}/environments/services/neutron-ovn-dvr-ha.yaml \
-  -e ${THT_DEFAULT}/environments/ssl/enable-internal-tls.yaml \
-  -e ${THT_DEFAULT}/environments/ssl/tls-everywhere-endpoints-dns.yaml \
+  -e ${THT_DEFAULT}//environments/ssl/tls-endpoints-public-dns.yaml \
   -r ${THT_CUSTOM}/common/roles_data.yaml \
   -n ${THT_CUSTOM}/common/network_data.yaml \
   -e ${THT_CUSTOM}/common/environments/network_environment.yaml \
