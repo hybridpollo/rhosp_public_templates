@@ -13,8 +13,7 @@ parameter_defaults:
       - openstack-16-for-rhel-8-x86_64-rpms
       - fast-datapath-for-rhel-8-x86_64-rpms
       - satellite-tools-6.5-for-rhel-8-x86_64-rpms
-
-    rhsm_activation_key: 'osp16-0-ak'
+    rhsm_activation_key: 'osp16-1-ak'
     rhsm_method: 'satellite'
     rhsm_org_id: 'VXYZ_Labs'
     rhsm_server_hostname: 'satellite.voltron.xyz'

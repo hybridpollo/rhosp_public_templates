@@ -10,8 +10,3 @@ parameter_defaults:
   TimeZone: 'America/Chicago'
   NodeRootPassword: 'redhat'
 
-  # The DNS domain used for the hosts. This must match the overcloud_domain_name configured on the undercloud.
-  CloudDomain: voltron.xyz
-
-  # The DNS name of this cloud. E.g. ci-overcloud.tripleo.org
-  CloudName: osp-console.voltron.xyz

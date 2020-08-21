@@ -5,6 +5,6 @@ parameter_defaults:
   ComputeSchedulerHints:
     'capabilities:node': 'compute-%index%'
   HostnameMap:
-    overcloud-controller-0: osp16-ctrl01
-    overcloud-compute-0: osp16-comp01
-    overcloud-compute-1: osp16-comp02
+    voltron-controller-0: osp16-ctrl01
+    voltron-compute-0: osp16-comp01
+    voltron-compute-1: osp16-comp02

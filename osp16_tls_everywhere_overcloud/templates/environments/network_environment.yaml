@@ -18,7 +18,6 @@ parameter_defaults:
   DnsSearchDomains: 'voltron.xyz'
   # Define the Ntp servers for the overcloud nodes 
   NtpServer: ['clock.nyc.he.net','clock.fmt.he.net']
-
   # List of Neutron network types for tenant networks (will be used in order)
   NeutronNetworkType: 'geneve,vlan'
   # Neutron VLAN ranges per network, for example 'datacentre:1:499,tenant:500:1000':

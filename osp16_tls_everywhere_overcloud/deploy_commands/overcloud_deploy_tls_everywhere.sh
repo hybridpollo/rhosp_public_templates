@@ -6,6 +6,7 @@
 THT_DEFAULT="/usr/share/openstack-tripleo-heat-templates"
 THT_CUSTOM_TEMPLATES="/home/stack/overcloud_deployment/templates"
 RC_FILE="/home/stack/stackrc"
+STACK_NAME="voltron"
 
 if [[ $USER != "stack" ]]; then
   echo -e "ERROR: Deploy script  must be run as the stack user."
@@ -27,13 +28,14 @@ fi
 # Deploy 
 ###################################################    
 
-openstack overcloud deploy --templates \
+openstack overcloud deploy --stack ${STACK_NAME} --templates \
   -r ${THT_CUSTOM_TEMPLATES}/roles_data.yaml \
   -n ${THT_CUSTOM_TEMPLATES}/network_data.yaml \
   -e ${THT_DEFAULT}/environments/network-isolation.yaml \
   -e ${THT_DEFAULT}/environments/services/neutron-ovn-dvr-ha.yaml \
   -e ${THT_DEFAULT}/environments/ssl/enable-internal-tls.yaml \
   -e ${THT_DEFAULT}/environments/ssl/tls-everywhere-endpoints-dns.yaml \
+  -e ${THT_DEFAULT}/environments/services/haproxy-public-tls-certmonger.yaml \
   -e ${THT_CUSTOM_TEMPLATES}/container_image_prepare.yaml \
   -e ${THT_CUSTOM_TEMPLATES}/node_info.yaml \
   -e ${THT_CUSTOM_TEMPLATES}/customizations.yaml \
