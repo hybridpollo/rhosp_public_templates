@@ -1,0 +1,19 @@
+# Ansible managed: modified on 2020-05-01 09:26:15
+# openstack tripleo container image prepare default --local-push-destination --output-env-file containers-prepare-parameter.yaml
+#
+
+parameter_defaults:
+  ContainerImagePrepare:
+  - push_destination: 172.16.24.2:8787
+    set:
+      name_prefix: openstack-
+      name_suffix: ''
+      namespace: registry.redhat.io/rhosp-rhel8
+      neutron_driver: ovn
+      rhel_containers: false
+      tag: '16.1'
+    tag_from_label: '{version}-{release}'
+  ContainerImageRegistryLogin: true
+  ContainerImageRegistryCredentials:
+    registry.redhat.io:
+      fake-account|fake-user: fakepassJSUzUxMiJ9.eyJzdWIiOiIwMGY0MWEzODc3YTc0NzEyYjY1ODcxNTg5MGQ4Yjc4YSJ9.vQHC_hsKDxGTiZ8ilJyCBsmYUr1nCpznXHI_hvNiqBA2_WyMr-FXvi9GOVHN8AF0_2LCjTgJAgijSLZuRJhav7faFsnovuWvCJ7Os4-BpnoSHFzKX_kwsV8suPzl9FxQnezpgbE6gMUp2PVg0wpYvB9r9cC3vnF16vRXbqjM9vF-U-h26vAhWYONthgO8WWaOTILCJtGAe1kUZk9STxspFTIhmmw8G3xIhgnCEBEcQPAAYQpW4jNBj0JtoFHBVukxs6CFiczZ_z_EL2E88zD6M_Xo4n-DTrmmVI4lxbjCo_Z2lxz0ws9Y81hnMagsXHP6Waod1tvVIWIvh9p8iWBuz8Z4EDO1M5g-RIWkj3RhNypgufUM9coBTgSJVpTljh3IvaQlV_AaZAmm6ObBkTzBZGRyik38nqbA5WUkjzN8TlIphjecpp2D-RVOtF7pzXSNVPjEPGY_BKaz-_UrZdNvO7stQw0jq7C5h5OpyIIrLNqh-j-QW7glNcF14o6ItizoH5pF74gaXHB_QWUfXcGa_zQTtuvjlIl4vpvKuHI1igw-p4VRJMfdQgmHeDB0UlPgLmsMeAnml3nQZNx1vqOoMwqfthOv5Ty6LfQm4I7M5-59V2j4DkNQp4gqIcmLKdW5LLFK-RwBb2aHuqkXlh4CJ-cOWZyLjB_sBa6OldVfQ4

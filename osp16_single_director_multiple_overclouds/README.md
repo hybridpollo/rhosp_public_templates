@@ -12,7 +12,7 @@ to the [Red Hat OpenStack Platform 16.1: Director Installation and Usage: Chapte
 - Network Isolation
 - Predictable Hostnames
 - Predictable Host IP Addreses
-- Predictable VIPS
+- Predictable OpenStack Endpoint High Availability Virtual IP Addresses
 - Encrypted External API Endpoints
 - Glance with NFS integration
 - Cinder with NFS integration

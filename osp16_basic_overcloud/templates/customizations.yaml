@@ -1,0 +1,12 @@
+parameter_defaults:
+  # Extra kernel parameters that applies
+  #  to all roles. Keep in mind 
+  #  that ExtraSysctlSettings defined under 
+  #  <Role>Parameters: will take precedence
+  #  over this ExtraSysctlSettings stanza
+  ExtraSysctlSettings:
+    net.ipv4.conf.all.log_martians:
+      value: 0
+    net.ipv4.conf.default.log_martians:
+      value: 0
+

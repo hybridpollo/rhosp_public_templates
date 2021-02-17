@@ -1,0 +1,13 @@
+# Environment file containing the node counts
+# Flavors and general customizations
+parameter_defaults:
+  OvercloudControllerFlavor: baremetal
+  OvercloudComputeFlavor: baremetal
+  ControllerCount: 1
+  ComputeCount: 2
+
+  # Miscellaneous overcloud level parameters
+  TimeZone: 'America/Chicago'
+  NodeRootPassword: 'redhat'
+  CloudDomain: voltron.xyz
+  CloudName: osp-console.voltron.xyz
